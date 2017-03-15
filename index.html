@@ -2,143 +2,168 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Bondi theme</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bondi theme</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="site-header">
-      <div class="container">
-        <div class="site-header__logo">
-          <div class="logo">
-            <a href="" class="logo__link">
-              <img src="img/Logo.png" class="logo__pic" >
-            </a>
-          </div>
-        </div>
-        <div class="site-header__menu">
-         <nav class="main-menu">
-           <ul class="main-menu__list">
-             <li class="main-menu__item">Home</li>
-             <li class="main-menu__item">Services</li>
-             <li class="main-menu__item">Portfolio</li>
-             <li class="main-menu__item">About</li>
-             <li class="main-menu__item">Contact</li>
-           </ul>
-         </nav>
-       </div>
-       <div class="site-header__login">
-        <a href="" class="button"><span class="button-text">Login</span></a>
-      </div>
-    </div>
-  </div>
+
+ <header class="site-header">
+  <div class="container clearfix">
+<div class="site-header__logo">
+   <a href="#" class="logo">
+    <img src="img/Logo.png" class="logo__pic" >
+  </a>
+</div>
+  <div class="site-header__right">
+   <nav class="main-menu">
+   <ul class="main-menu__list"><!--
+     --><li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li><!--
+     --><li class="main-menu__item"><a href="#" class="main-menu__link">Services</a></li><!--
+     --><li class="main-menu__item"><a href="#" class="main-menu__link">Portfolio</a></li><!--
+     --><li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li><!--
+     --><li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li><!--
+   --></ul>
+ </nav> 
+ <a class="site-header__search"></a>
+ <a href="" class="site-header__login btn">Login</a>
+ 
+
+</div>
+
+</div>
 </header>
-<section class="main">
+<section class="start">
   <div class="container">
-    <h1 class="main__title">Taste the Creativity</h1>
-    <p class="main__text">We make awesome graphic and web design</p>
-    <a href="" class="button">Get Started</a>
+    <h1 class="start__title">Taste the Creativity</h1>
+    <p class="start__text">We make awesome graphic and web design</p>
+    <a href="" class="btn btn_size_l">Get Started</a>
   </div>
+
 </section>
 
 <section class="services">
  <div class="container">
-   <header class="services__header">
+   <header class="section__header">
     <h2 class="section__title section__title_icon">We are Good at</h2>
     <div class="section__subtitle">SOME OF THEASE STUFF UNDER</div>
   </header>
 
-  <ul class="services__list">
-    <li class="services__item services__item_first services__item_graphic">
-      <img src="img/graphic-design.png" class="service__icon">
-      <div class="services__title">GRAPHIC DESIGN</div>
-      <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
-    </li>
-    <li class="service__item services__item_second services__item_web">
-      <img src="img/web-design.png" class="service__icon">
-      <div class="services__title">WEB DESIGN</div>
-      <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
-    </li>
-    <li class="service__item services__item_third services__item_app">
-      <img src="img/app-design.png" class="service__icon">
-      <div class="services__title">APP DESIGN</div>
-      <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
-    </li>
-  </ul>
+  <ul class="services__list"><!--
+  --><li class="services__item  services__item_graphic">
+  <div class="services__num  services__num_first">
+    <img src="img/graphic-design.svg" class="service__icon"></div>
+    <div class="services__title">GRAPHIC DESIGN</div>
+    <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
+</li><!--
+--><li class="services__item services__item_web">
+<div class="services__num services__num_second">
+ <img src="img/web-design.png" class="service__icon">
+</div>
+<div class="services__title">WEB DESIGN</div>
+<div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
+</li><!--
+--><li class="services__item services__item_app">
+<div class="services__num services__num_third">
+  <img src="img/app-design.png" class="service__icon">
+</div>
+<div class="services__title">APP DESIGN</div>
+<div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
+</li><!--
+--></ul>
 </div>
 </section>
 <section class="portfolio">
  <div class="container">
-  <header class="portfolio__header">
+  <header class="section__header">
     <h2 class="section__title section__title_icon">We Make This</h2>
     <div class="section__subtitle">PREPARE TO BE AMAZED</div>
 
   </header>
 
   <div class="gallery">
-    <ul class="gallery__filter">
-      <li class="gallery__swith"><button class="button">All</button></li>
-      <li class="gallery__swith"><button class="button">Design</button></li>
-      <li class="gallery__swith"><button class="button">Code</button></li>
-      <li class="gallery__swith"><button class="button">Photography</button></li>
-      <li class="gallery__swith"><button class="button">Apps</button></li>
-    </ul>
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-    <img src="" class="gallery__img" width="270" height="200">
-  </div>
-  <a href="" class="button"><span class="button-text">I WANT MORE...</span></a>
+    <ul class="gallery__filter"><!--
+     --><li class="gallery__item"><btn class="gallery__swith">All</btn></li><!--
+     --><li class="gallery__item"><btn class="gallery__swith">Design</btn></li><!--
+     --><li class="gallery__item"><btn class="gallery__swith">Code</btn></li><!--
+     --><li class="gallery__item"><btn class="gallery__swith">Photography</btn></li><!--
+     --><li class="gallery__item"><btn class="gallery__swith">Apps</btn></li><!--
+   --></ul>
+  <div class="gallery__content"><!--
+ --><div class="gallery__img-block">
+ <a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+--><div class="gallery__img-block">
+<a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+--><div class="gallery__img-block">
+<a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+--><div class="gallery__img-block">
+<a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+--><div class="gallery__img-block">
+<a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+  --><div class="gallery__img-block">
+  <a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+ --><div class="gallery__img-block">
+ <a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+--><div class="gallery__img-block">
+<a href="" class="gallery__popup"><img src="http://lorempixel.com/270/200/" class="gallery__img"></a></div><!--
+--></div>
+<div class="portfolio__more">
+ <a href="" class="btn btn_size_l">I WANT MORE...</a>
+</div>
 
 </div>
 </section>
 <section class="about">
  <div class="container">
-   <header class="about__header">
+   <header class="section__header about__header">
     <h2 class="section__title section__title_icon">Some Stuff About Us</h2>
     <div class="section__subtitle">THE GREAT TEAM</div>
     <p class="section__description">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
   </header>
-  
-  <div class="about__title"></div>
-  <div class="about__text"></div>
-  <a class="button">OREDER ME ONE</a> 
-  <img src="img/MacBook.png" class="about__img">
-  
+  <div class="about__content clearfix">
+    <div class="about__description">
+      <div class="about__title">Retina Design</div>
+      <div class="about__text">
+      <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+      <p>Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+      </div>
+       <a class="btn btn_about">OREDER ME ONE</a> 
+      </div>
+
+    <div class="about__pic">
+      <img src="img/MacBook.png" class="about__img">
+    </div>
+  </div>
 </div>
 </section>
 <section class="team">
  <div class="container">
-   <header class="team__header">
+   <header class="section__header">
     <h2 class="section__title section__title_yellow">Meet the Team</h2>
-    <p class="section__description">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+    <p class="section__description section__description_long">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
   </header>
-  <ul class="team__list">
-    <li class="team__person">
+  <ul class="team__list"><!--
+    --><li class="team__person">
      <img src="" class="team__pic">
      <div class="team__name">Luke Skywalker</div>
      <blockquote class="team__blockquote">“I don't understand how we got by those troops. I thought we were dead.“</blockquote>
-   </li>
-   <li class="team__person">
+   </li><!--
+--><li class="team__person">
      <img src="" class="team__pic">
      <div class="team__name">Obi-Wan Kenobi</div>
      <blockquote class="team__blockquote">“Your clones are very impressive. You must be very proud”</blockquote>
-   </li>
-   <li class="team__person">
+   </li><!--
+--><li class="team__person">
      <img src="" class="team__pic">
      <div class="team__name">Princess Leia</div>
      <blockquote class="team__blockquote"> “I don't know who you are or where you came from, but from now on you'll do as I tell you, okay?”</blockquote>
-   </li>
-   <li class="team__person">
+   </li><!--
+--><li class="team__person">
      <img src="" class="team__pic">
      <div class="team__name">Yoda</div>
      <blockquote class="team__blockquote">“Do not assume anything Obi-Wan. Clear your mind must be if you are to discover the real villains behind this plot.”</blockquote>
-   </li>
- </ul>
+   </li><!--
+--></ul>
 </div>
 </section>
 <section class="clients">
@@ -167,50 +192,54 @@
 </section>
 <section class="application">
  <div class="container">
-   <header class="application__header">
+   <header class="section__header">
     <h2 class="section__title section__title_white">Start Your Project Now</h2>
-    <p class="section__description">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
-  </header>
-  <a href="#" class="button">START PROJECT</a>
+    <p>Leave your description and we start the engine. Don't worry, you can cancel anytime</p>
+      </header>
+      <div class="application__content">
+  <a href="#" class="btn btn_size_l">START PROJECT</a></div>
 </div>
 </section>
 <section class="blog">
  <div class="container">
-  <header class="blog__header">
+  <header class="section__header">
     <h2 class="section__title section__title_icon">Read Our Blog</h2>
     <div class="section__subtitle">NEW STORIES</div>
   </header>
-  <ul class="blog__list">
+ 
+  <ul class="blog__list clearfix">
     <li class="blog__item">
-      <img src="" class="blog__img">
+      <img src="http://lorempixel.com/600/300/" class="blog__img">
       <time class="blog__date">January 17,2017</time>
       <div class="blog__title">Some Awesome Blog Title Here</div>
     </li>
     <li class="blog__item">
-     <img src="" class="blog__img">
+     <img src="http://lorempixel.com/370/130/" class="blog__img">
      <time class="blog__date">January 17,2017</time>
      <div class="blog__title">Some Awesome Blog Title Here</div>
    </li>
    <li class="blog__item">
-     <img src="" class="blog__img">
+     <img src="http://lorempixel.com/370/130/" class="blog__img">
      <time class="blog__date">January 17,2017</time>
      <div class="blog__title">Some Awesome Blog Title Here</div>
    </li>
  </ul>
- <a class="button">MORE STORIES</a>
+ <div class="blog__more">
+ <a class="btn btn_size_l">MORE STORIES</a>
+ </div>
 </div>
 </section>
 <section class="subscription">
  <div class="container">
-   <div class="subscription__text">Subscribe to our Newsletter:</div>
+   <span class="subscription__text">Subscribe to our Newsletter:</span>
    <input name="EMAIL" placeholder="Enter email Address" class="subscription__input" value="" type="email">
-   <button class="button button_bg_blue">Subscribe</button>
+   <btn class="btn btn_bg_blue btn_size_l">Subscribe</btn>
  </div>
 </section>
-</div>
+
 <footer class="footer">
-  <div class="container">
-    <div class="footer__left">
+  <div class="container clearfix">
+    <div class="footer__col">
       <div class="logo">
         <a href="" class="logo__link">
           <img src="img/Logo.png" class="logo__pic" >
@@ -222,45 +251,49 @@
         © 2017 - Bondi.Inc
       </div>
     </div>
-    <div class="footer__center">
+    <div class="footer__col">
       <div class="sub-menu">
         <div class="sub-menu__title">Links</div>
         <ul class="sub-menu__list">
-          <li><a class="sub-menu__link">Home</a></li>
-          <li><a class="sub-menu__link">Our Services</a></li>
-          <li><a class="sub-menu__link">Portfolio</a></li>
-          <li><a class="sub-menu__link">Testimonials</a></li>
-          <li><a class="sub-menu__link"></a>Support</li>
-          <li><a class="sub-menu__link"></a>Terms and Conditions</li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Home</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Our Services</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Portfolio</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Testimonials</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Support</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Terms and Conditions</a></li>
         </ul>
       </div>
       <div class="sub-menu">
         <div class="sub-menu__title">About Us</div>
         <ul class="sub-menu__list">
-          <li><a class="sub-menu__link"></a>Sign In</li>
-          <li><a class="sub-menu__link"></a>Register</li>
-          <li><a class="sub-menu__link"></a>About Us</li>
-          <li><a class="sub-menu__link"></a>Blog</li>
-          <li><a class="sub-menu__link"></a>Contact Us</li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Sign In</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Register</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">About Us</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Blog</a></li>
+          <li class="sub-menu__item"><a href="" class="sub-menu__link">Contact Us</a></li>
         </ul>
       </div>
-      <div class="footer__right">
+    </div>
+    <div class="footer__col">
       <div class="footer__title">Contact Us</div>
-        <div class="footer__text">Get in touch with us via mail phone.We are waiting for 
-your call or message          
-        </div>
-        <a href="#" class="button button_color_white"></a>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__icon social__icon_fb"><a href="#"></li>
-            <li class="social__icon social__icon_tw"><a href="#"></li>
-            <li class="social__icon social__icon_g+"><a href="#"></li>
-            <li class="social__icon social__icon_hz"><a href="#"></li>
-          </ul>
-        </div>
+      <div class="footer__text">Get in touch with us via mail phone.We are waiting for 
+        your call or message          
+      </div>
+      <div class="footer__email">
+      <a href="#" class="btn btn_email">graphberry@gmail.com</a>
+      </div>
+      <div class="social">
+        <ul class="social__list"><!--
+          --><li class="social__icon social__icon_fb"><a href="#"></a></li><!--
+          --><li class="social__icon social__icon_tw"><a href="#"></a></li><!--
+          --><li class="social__icon social__icon_g"><a href="#"></a></li><!--
+          --><li class="social__icon social__icon_dr"><a href="#"></a></li><!--
+          --></ul>
       </div>
     </div>
-  </footer>
+  </div>
+
+</footer>
 
 
 
