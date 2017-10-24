@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
   
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bondi theme</title>
 </head>
 <body>
@@ -24,18 +24,24 @@
     <img alt="" src="img/Logo.png" class="logo__pic" >
   </a>
 </div>
+<a id="toggle-nav" href="#">
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M16,9a3,3,0,1,0-3-3A3,3,0,0,0,16,9Zm0-4.46A1.46,1.46,0,1,1,14.54,6,1.46,1.46,0,0,1,16,4.54Z"/><path class="cls-1" d="M16,19a3,3,0,1,0-3-3A3,3,0,0,0,16,19Zm0-4.46A1.46,1.46,0,1,1,14.54,16,1.46,1.46,0,0,1,16,14.54Z"/><path class="cls-1" d="M16,29a3,3,0,1,0-3-3A3,3,0,0,0,16,29Zm0-4.46A1.46,1.46,0,1,1,14.54,26,1.46,1.46,0,0,1,16,24.54Z"/></svg>
+</a>
+
   <div class="site-header__right">
    <nav class="main-menu">
    <ul class="main-menu__list"><!--
      --><li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li><!--
-     --><li class="main-menu__item"><a href="#" class="main-menu__link">Services</a></li><!--
-     --><li class="main-menu__item"><a href="#" class="main-menu__link">Portfolio</a></li><!--
-     --><li class="main-menu__item"><a href="#" class="main-menu__link">About</a></li><!--
-     --><li class="main-menu__item"><a href="#" class="main-menu__link">Contact</a></li><!--
+     --><li class="main-menu__item"><a href="#services" class="main-menu__link">Services</a></li><!--
+     --><li class="main-menu__item"><a href="#portfolio" class="main-menu__link">Portfolio</a></li><!--
+     --><li class="main-menu__item"><a href="#about" class="main-menu__link">About</a></li><!--
+     --><li class="main-menu__item"><a href="#contact" class="main-menu__link">Contact</a></li><!--
    --></ul>
  </nav> 
- <a class="site-header__search"></a>
- <div class="site-header__login btn">Login</div>
+ <!-- <a class="site-header__search"></a> -->
+
+
+ <button class="site-header__login btn">Login</button>
 
 
 </div>
@@ -53,7 +59,7 @@
 </section>
 
 
-<section class="services">
+<section class="services" id="services">
  <div class="container">
    <header class="section__header">
     <h2 class="section__title section__title_icon">We are Good at</h2>
@@ -62,21 +68,21 @@
 
   <ul class="services__list"><!--
   --><li class="services__item  services__item_graphic">
-  <div class="services__num  services__num_first">
-    <img alt="" src="img/graphic-design.svg" class="service__icon"></div>
+  <div class="services__num  services__num_first"></div>
+ 
     <div class="services__title">GRAPHIC DESIGN</div>
     <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
 </li><!--
 --><li class="services__item services__item_web">
 <div class="services__num services__num_second">
- <img alt="" src="img/web-design.png" class="service__icon">
+ 
 </div>
 <div class="services__title">WEB DESIGN</div>
 <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
 </li><!--
 --><li class="services__item services__item_app">
 <div class="services__num services__num_third">
-  <img alt="" src="img/app-design.png" class="service__icon">
+ 
 </div>
 <div class="services__title">APP DESIGN</div>
 <div class="services__content">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</div>
@@ -84,7 +90,7 @@
 --></ul>
 </div>
 </section>
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
  <div class="container">
   <header class="section__header">
     <h2 class="section__title section__title_icon">We Make This</h2>
@@ -125,7 +131,7 @@
 </div>
 </div>
 </section>
-<section class="about">
+<section class="about" id="about">
  <div class="container">
    <header class="section__header about__header">
     <h2 class="section__title section__title_icon">Some Stuff About Us</h2>
@@ -152,26 +158,30 @@
  <div class="container">
    <header class="section__header">
     <h2 class="section__title section__title_yellow">Meet the Team</h2>
-    <p class="section__description section__description_long">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+    <p class="section__description">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
   </header>
   <ul class="team__list"><!--
     --><li class="team__person">
-     <img alt="" src="" class="team__pic">
+      <div class="team__pic"> 
+     <img alt="" src="img/team-1.jpg"></div>
      <div class="team__name">Luke Skywalker</div>
      <blockquote class="team__blockquote">“I don't understand how we got by those troops. I thought we were dead.“</blockquote>
    </li><!--
 --><li class="team__person">
-     <img alt="" src="" class="team__pic">
+     <div class="team__pic"> 
+     <img alt="" src="img/team-3.jpg"></div>
      <div class="team__name">Obi-Wan Kenobi</div>
      <blockquote class="team__blockquote">“Your clones are very impressive. You must be very proud”</blockquote>
    </li><!--
 --><li class="team__person">
-     <img alt="" src="" class="team__pic">
+      <div class="team__pic"> 
+     <img alt="" src="img/team-2.jpg"></div>
      <div class="team__name">Princess Leia</div>
      <blockquote class="team__blockquote"> “I don't know who you are or where you came from, but from now on you'll do as I tell you, okay?”</blockquote>
    </li><!--
 --><li class="team__person">
-     <img alt="" src="" class="team__pic">
+     <div class="team__pic"> 
+     <img alt="" src="img/team-4.jpg"></div>
      <div class="team__name">Yoda</div>
      <blockquote class="team__blockquote">“Do not assume anything Obi-Wan. Clear your mind must be if you are to discover the real villains behind this plot.”</blockquote>
    </li><!--
@@ -221,23 +231,26 @@
  
   <ul class="blog__list clearfix">
     <li class="blog__item">
-      <img alt="" src="" class="blog__img">
+      <div class="blog__img">
+      <img alt="" src="img/blog-1.jpg"></div>
       <time datetime="2017-01-17" class="blog__date">January 17,2017</time>
       <div class="blog__title">Some Awesome Blog Title Here</div>
     </li>
     <li class="blog__item">
-     <img alt="" src="" class="blog__img">
+     <div class="blog__img">
+      <img alt="" src="img/blog-2.jpg"></div>
      <time datetime="2017-01-17" class="blog__date">January 17,2017</time>
      <div class="blog__title">Some Awesome Blog Title Here</div>
    </li>
    <li class="blog__item">
-     <img alt="" src="" class="blog__img">
+     <div class="blog__img">
+      <img alt="" src="img/blog-3.jpg"></div>
      <time datetime="2017-01-17" class="blog__date">January 17,2017</time>
      <div class="blog__title">Some Awesome Blog Title Here</div>
    </li>
  </ul>
  <div class="blog__more">
- <a class="btn btn_size_l">MORE STORIES</a>
+ <a href="#" class="btn btn_size_l">MORE STORIES</a>
  </div>
 </div>
 </section>
@@ -249,21 +262,21 @@
  </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="container clearfix">
-    <div class="footer__col">
-      <div class="logo">
-        <a href="" class="logo__link">
+    <div class="footer__col footer__copyright">
+      <div class="footer__logo">
+        <a href="" class="logo">
           <img alt="" src="img/Logo.png" class="logo__pic" >
         </a>
       </div>
-      <p class="footer__text">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-      <div class="copyright">
-        Created by Graphberry,Belgrade,Serbia<br>
+      <p class="footer__text copyright">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+      <p class="footer__text copyright">
+        Created by Graphberry, Belgrade, Serbia<br>
         © 2017 - Bondi.Inc
-      </div>
+      </p>
     </div>
-    <div class="footer__col">
+    <div class="footer__col clearfix footer__sub-menu">
       <div class="sub-menu">
         <div class="sub-menu__title">Links</div>
         <ul class="sub-menu__list">
@@ -286,7 +299,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer__col">
+    <div class="footer__col footer__contacts">
       <div class="footer__title">Contact Us</div>
       <div class="footer__text">Get in touch with us via mail phone.We are waiting for 
         your call or message          
@@ -296,10 +309,10 @@
       </div>
       <div class="social">
         <ul class="social__list"><!--
-          --><li class="social__icon social__icon_fb"><a href="#"></a></li><!--
-          --><li class="social__icon social__icon_tw"><a href="#"></a></li><!--
-          --><li class="social__icon social__icon_g"><a href="#"></a></li><!--
-          --><li class="social__icon social__icon_dr"><a href="#"></a></li><!--
+          --><li class="social__icon social__icon_fb"><a href="#" class="social__link social__link_fb"></a></li><!--
+          --><li class="social__icon"><a href="#" class="social__link social__link_tw"></a></li><!--
+          --><li class="social__icon"><a href="#" class="social__link social__link_g"></a></li><!--
+          --><li class="social__icon"><a href="#" class="social__link social__link_dr"></a></li><!--
           --></ul>
       </div>
     </div>
@@ -307,8 +320,8 @@
 
 </footer>
 
-
-
+<script src="js/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 </html>
