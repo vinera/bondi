@@ -116,8 +116,8 @@ img {
   background-color: #ff3150;
   top: 0;
   left: 0;
-  
   z-index: 100;
+  overflow: auto;
 }
 
 
@@ -127,6 +127,7 @@ img {
 .main-menu__list {
   padding: 0;
   margin: 0;
+
 }
 
 .main-menu__item {
@@ -138,9 +139,9 @@ img {
   @media screen and (max-width: 768px) {
     .main-menu__list {
       display: none;
-      height: 100vh;
       transform: translateY(25%);
-      overflow: auto;
+      height: 100vh;
+
      }
 
     .main-menu__item {
