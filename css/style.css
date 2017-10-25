@@ -139,10 +139,6 @@ img {
   @media screen and (max-width: 768px) {
     .main-menu__list {
       display: none;
-<<<<<<< HEAD
-=======
-     
->>>>>>> c396603ea2ae5f3b29a40843104aeeb8839ec107
       transform: translateY(25%);
       height: 100vh;
 
